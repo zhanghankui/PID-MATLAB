@@ -10,10 +10,10 @@ zsys = tf(num,den,Ts);
 figure(1);
 bode(zsys);
 
-%        'zoh'       Zero-order hold on the inputs 零阶保持器法，又称阶跃响应不变法
-%        'foh'       Linear interpolation of inputs 一阶保持器法
-%        'impulse'   Impulse-invariant discretization 脉冲响应不变法
-%        'tustin'    Bilinear (Tustin) approximation. 双线性变换法
+%        'zoh'       Zero-order hold on the inputs 
+%        'foh'       Linear interpolation of inputs 
+%        'impulse'   Impulse-invariant discretization ?
+%        'tustin'    Bilinear (Tustin) approximation. 
 %        'matched'   Matched pole-zero method (for SISO systems only). 
 
 sys = d2c(zsys,'tustin');
@@ -26,6 +26,6 @@ bode(zsys2);
 
 num = [133];
 den = [1 25 0];
-sys1 = tf(num,den);%传递函数
-[A,B,C,D] = tf2ss(num,den);%状态空间模型
-bode(sys1)%伯德图
+sys1 = tf(num,den);
+[A,B,C,D] = tf2ss(num,den);
+bode(sys1)
