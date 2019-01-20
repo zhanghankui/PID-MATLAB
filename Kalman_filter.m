@@ -39,10 +39,10 @@ w(k)=0.10*rands(1);   %Process noise on u
 v(k)=0.10*rands(1);   %Measurement noise on y
 
 u(k)=1.0*sin(2*pi*1.5*k*ts);
-u(k)=u(k)+w(k);
+u(k)=u(k)+w(k);%加入控制干扰
   
 y(k)=-den(2)*y_1-den(3)*y_2+num(2)*u_1+num(3)*u_2;
-yv(k)=y(k)+v(k);
+yv(k)=y(k)+v(k);%加入测量噪音
 
 %Measurement update
     Mn=P*C'/(C*P*C'+R);
