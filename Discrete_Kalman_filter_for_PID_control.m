@@ -48,7 +48,7 @@ for k=1:1:1000
 
     M=2;
     if M==1            %No kalman filter
-        yout(k)=yv(k);
+        yout(k)=yv(k); 
     elseif M==2        %Using kalman filter
         yout(k)=ye(k);
     end
