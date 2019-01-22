@@ -26,8 +26,8 @@ R=1;           %Covariances of v
 P=B*Q*B';          %Initial error covariance
 x=zeros(2,1);      %Initial condition on the state
 
-ye=zeros(M,1);
-ycov=zeros(M,1);
+% ye=zeros(M,1);
+% ycov=zeros(M,1);
 
 u_1=0;u_2=0;
 y_1=0;y_2=0;
