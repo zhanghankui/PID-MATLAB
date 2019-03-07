@@ -4,6 +4,9 @@ close all;
 
 sys=tf(400,[1,30,200,0]);
 
+ axis('normal');
+ zgrid('new');
+ 
 figure(1);
 rlocus(sys);
 [km,pole]=rlocfind(sys);%k为对应选择点处根轨迹开环增益；p为此点处的系统闭环特征根。
