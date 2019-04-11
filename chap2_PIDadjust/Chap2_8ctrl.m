@@ -3,7 +3,7 @@ function [sys,x0,str,ts] = spacemodel(t,x,u,flag)
 %   此处显示详细说明
 switch flag,
     case 0,
-        [sys,x0,str,ts]=edlInitializeSizes;
+        [sys,x0,str,ts]=mdlInitializeSizes;
     case 3,
         sys=mdlOutputs(t,x,u);
     case {2,4,9}
