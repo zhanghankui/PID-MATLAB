@@ -6,4 +6,4 @@ K=[k1,k2]';
 C=[1,0];
 A=[0 1;-1 -10];
 
-F=det(x*eye(2)-A+K*C*exp(-tol*x));
+F=det(x*eye(2)-A+K*C*exp(-tol*x));%det(X) is the determinant(ÐÐÁÐÊ½) of the square matrix X.
