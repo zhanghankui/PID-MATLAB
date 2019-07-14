@@ -18,7 +18,7 @@ sizes.NumContStates=3;%模块连续状态变量的个数
 sizes.NumDiscStates=0;%模块离散状态变量的个数 
 sizes.NumOutputs = 3;
 sizes.NumInputs = 4;
-sizes.DirFeedthruough = 0;
+sizes.DirFeedthrough = 0;
 sizes.NumSampleTimes = 0;
 sys=simsizes(sizes);
 x0=[0 0 0];
@@ -48,7 +48,7 @@ else
 end
 
 sys(1)=x(2)-beta1*e;
-sys(2)=x(3)-beta2*fall+b*ut;
+sys(2)=x(3)-beta2*fal1+b*ut;
 sys(3)=-beta3*fal2;
 
 function sys=mdlOutputs(t,x,u)
