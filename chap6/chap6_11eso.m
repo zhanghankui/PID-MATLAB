@@ -2,7 +2,7 @@ function [sys,x0,str,ts]=s_function(t,x,u,flag)
 switch flag,
     case 0,
         [sys,x0,str,ts]=mdlInitializeSizes;
-    case 1,
+    case 1,  
         sys = mdlDerivatives(t,x,u);        
     case 3,
         sys=mdlOutputs(t,x,u);
